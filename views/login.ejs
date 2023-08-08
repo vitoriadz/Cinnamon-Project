@@ -1,0 +1,57 @@
+<%- include('./partials/header') %>
+<main>
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #FFDAE1; height: 50px;">
+<div class="container-fluid">
+<button class="btn btn-secondary btn-lg" style="font-size: 2rem; padding: 0; background: none; border: none; color: #F47B8F;" onclick="window.history.back();"><i class="bi bi-arrow-left-circle-fill"></i></button>
+<h1 class="text-center mx-auto" style="color: #F47B8F; margin-top: -50px">Acesse sua conta!</h1>
+</div>
+</div> 
+
+ <% if (message) { %>
+    <div class="alert alert-danger" style="font-size: 24px; text-align: center; margin-top:20px; color: #F47B8F; background-color: #FFDAE1; border-width: 0px;" role="alert">
+      <%= message %>
+    </div>
+  <% } %>
+
+<section class="vh-100">
+<div class="container py-5 h-100">
+<div class="row d-flex justify-content-center align-items-center h-100">
+<div class="row my-5 align-items-center">  
+<div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
+              
+<div class="card shadow-pink" style="max-width: 100%; width: 900px; margin-top: -300px;">
+<div class="card-body">
+  
+<form method="post" action="/login">
+<div class="mb-3">
+<label style="font-weight: bold; font-size: 20px; color: #F47B8F;" for="exampleInputEmail1">email</label>
+<input style="color: #F47B8F; background-color: #FFDAE1; font-size: 20px;" name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email">
+</div>
+              
+<div class="mb-3">
+<label style="font-weight: bold; font-size: 20px; color: #F47B8F;" for="exampleInputPassword1">senha</label>
+<input style="background-color: #FFDAE1; color: #F47B8F; font-size: 20px;" name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha">
+</div>
+
+<button type="submit" class="btn btn-primary">entrar</button>
+
+<a href="/register">
+<button type="button" class="btn btn-outline-primary">criar conta</button></a>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer>
+  <%- include('./partials/footer') %>
+</footer>
+
+</body>
+</html>

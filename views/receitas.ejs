@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+<main>
+<!-- Exemplo de como exibir as receitas -->
+<ul>
+  <% receitas.forEach((receita) => { %>
+    <li><strong><%= receita.nome %></strong>: <%= receita.descricao %></li>
+  <% }) %>
+</ul>
+
+</main>
+<footer>
+  <%- include('./partials/footer') %>
+</footer>
+</body>
+</html>

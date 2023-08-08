@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+<div class="jumbotron jumbotron-fluid" style="background-color: #FFDAE1; height: 50px;">
+<div class="container-fluid">
+<button class="btn btn-secondary btn-lg" style="font-size: 2rem; padding: 0; background: none; border: none; color: #F47B8F;" onclick="window.history.back();"><i class="bi bi-arrow-left-circle-fill"></i></button>
+</div>
+</div>
+
+
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+  
+<div class="container d-flex justify-content-center align-items-center" style="margin: 20px; color: #F47B8F;">
+<img src="/images/error.png" height="400" alt="error" loading="..." /></a>
+<h3>A página que você buscou não foi <br> encontrada. 
+  Sinto muito! :(</h3>
+</div>
+
+<footer>
+<%- include('./partials/footer') %>
+</footer>

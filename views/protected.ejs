@@ -1,0 +1,52 @@
+<%- include('./partials/header1') %>
+<main>
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #FFDAE1; height: 50px;">
+  <div class="container-fluid">
+    <button class="btn btn-secondary btn-lg" style="font-size: 2rem; padding: 0; background: none; border: none; color: #F47B8F;" onclick="window.history.back();"><i class="bi bi-arrow-left-circle-fill"></i></button>
+  </div>
+</div>
+
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <div class="card shadow-pink" style="max-width: 100%; width: 900px; margin-top: -250px; background-color: #FFEBF5; border-width: 4px;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .8rem; border-bottom-left-radius: .8rem;">
+              <img src="/images/chefe.png" alt="perfil" class="img-fluid my-5" style="width: 80px;"/>
+              <h5 style="margin-top:-20px; color: #FFEBF5;">User</h5>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h5 style="color: #F47B8F;">Meu perfil</h5>
+                <hr style="color: #F47B8F;" class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <a style="margin-bottom: 10px;" class="btn btn-outline-primary" href="/favoritos"> <i class="bi bi-heart-fill"></i> favoritas</a>
+                   
+                    <a class="btn btn-outline-primary" href="/comentarios"><i class="bi bi-chat-fill"></i></i>comentários</a>
+                  </div>
+                  <div class="col-6 mb-3 d-flex justify-content-center align-items-center">
+                    <img src="/images/gummy.png" alt="gummy" class="img-fluid" style="width: 80px;">
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a class="btn btn-primary" href="/home1">Página Inicial</a>
+                    <a class="btn btn-primary" href="/logout">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <%- include('./partials/footer') %>
+</footer>
+</body>
+</html>
